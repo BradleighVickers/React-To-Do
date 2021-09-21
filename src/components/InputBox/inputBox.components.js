@@ -1,9 +1,8 @@
 
 import React, {useState} from "react";
 
-const InputBox = ({setTasks, tasks}) => {
+const InputBox = ({setTasks, tasks, setError ,error}) => {
     const[ newTask, setNewTask] = useState("");
-    const[error, setError] = useState("");
     const handleEnterKey =(e)=>{
         e.preventDefault();
         if(e.key === "Enter"){

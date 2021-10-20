@@ -13,7 +13,8 @@ const HomePage = () => {
 
     const handleDelete =(task)=> {
       const newArr = tasks.filter( t => t !== task);
-        setTasks(newArr); 
+        setTasks(newArr);
+        setEditItem("");
    };
 
     if(item.length >1 ){
